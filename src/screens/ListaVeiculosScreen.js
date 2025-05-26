@@ -13,6 +13,7 @@ import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import { fetchCarros, deletarCarroComConfirmacao } from '../service/carServices';
 import CarroCard from '../components/card/CarrosCard';
 import styles from '../styles/LitaCarrosStyle';
+import { StatusBar } from 'expo-status-bar';
 
 export default function ListaVeiculos() {
   const [carros, setCarros] = useState([]);
@@ -63,6 +64,7 @@ export default function ListaVeiculos() {
 
   return (
     <SafeAreaView style={styles.container}>
+    <StatusBar backgroundColor="#fff" barStyle="light-content" />
       {/* Cabeçalho animado */}
 
       <TouchableOpacity onPress={() => navigation.navigate('Home')}>

@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#333',
     textAlign: 'center',
-    marginBottom: 12,
+    marginBottom: 5,
     width: '100%',
     maxWidth: 600,
   },
@@ -52,7 +52,8 @@ const styles = StyleSheet.create({
 
   // Estilo dos cards
   card: {
-    padding: 16,
+    paddingLeft: 20,
+    paddingRight:20,
     marginVertical: 8,
     shadowOpacity: 0.1,
     shadowOffset: { width: 0, height: 4 },
@@ -71,13 +72,13 @@ const styles = StyleSheet.create({
   },
 
   imagem: {
-    width: '100%',
-    height: 180,
+    width: 300,
     borderRadius: 10,
     marginBottom: 12,
-    resizeMode: 'cover',  // importante
-    backgroundColor: '#eee', // pra ver a área da imagem se a url não carregar
+    backgroundColor: '#eee',
+    alignSelf: 'center',
   },
+  
 
 
   // Botão fixo de cadastro
